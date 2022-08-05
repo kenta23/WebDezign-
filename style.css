@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-group {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+   * {
+    font-size: 1rem;
+   }
+}
+ul li a {
+    position: relative;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    bottom: 3px;
+    height: 1px;
+    width: 0;
+    transition: all 0.3s ease-in;
+}
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+
